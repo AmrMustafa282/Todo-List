@@ -11,16 +11,16 @@ function App() {
   const [todoToShow, setTodoToShow] = useState("all");
   const [toggleAllComplete, setToggleAllComplete] = useState(true);
 
-  useEffect(() => {
-    if (JSON.parse(localStorage.getItem('todos')).length !== 0) {
-      setTodos(JSON.parse(localStorage.getItem('todos')))
-    }
-  }, [])
+  // useEffect(() => {
+  //   if (JSON.parse(localStorage.getItem('todos')).length !== 0) {
+  //     setTodos(JSON.parse(localStorage.getItem('todos')))
+  //   }
+  // }, [])
 
-  useEffect(() => {
-    localStorage.clear('todos', JSON.stringify(todos));
-    localStorage.setItem('todos', JSON.stringify(todos));
-  }, [todos])
+  // useEffect(() => {
+  //   localStorage.clear('todos', JSON.stringify(todos));
+  //   localStorage.setItem('todos', JSON.stringify(todos));
+  // }, [todos])
 
 
   const addTodo = (todo) => {
