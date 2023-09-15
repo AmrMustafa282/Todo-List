@@ -96,7 +96,7 @@ function App() {
 
 
   return (
-    <div className="container mx-auto flex flex-col rounded-sm  justify-start items-center my-40 pt-10 px-12 pb-32 w-fit  bg-[#1b1a3f]">
+    <div className="container mx-auto flex flex-col rounded-sm justify-start  items-center md:my-40 my-12  pt-10 md:px-12 pb-32 w-fit  bg-[#1b1a3f]  ">
       <TodoForm onSubmit={addTodo} />
       {edit &&
 
@@ -124,14 +124,14 @@ function App() {
         toggleComplete={() => toggleComplete(todo.id)}
       />)
       )}
-      <div className="flex gap-4 justify-center text-white font-extrabold mt-14 mb-6 ">
+      <div className="flex md:gap-4 gap-2 px-2 md:px-0 justify-center text-sm md:text-md text-white font-extrabold mt-14 mb-6 ">
         <button className="duration-500 bg-[#865bfb]  px-4 py-1 rounded-md" onClick={() => { updateTodoToShow("all") }}>All</button>
         <button className="duration-500 bg-blue-600 px-4 py-1 rounded-md" onClick={() => { updateTodoToShow("active") }}>Active</button>
         <button className="duration-500 bg-green-700 px-4 py-1 rounded-md" onClick={() => { updateTodoToShow("completed") }}>Completed</button>
 
         
       </div>
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 text-sm md:text-md">
         <button
           className="duration-500 px-4 py-1 rounded-md text-white font-extrabold"
           style={toggleAllComplete ? { backgroundColor: "red" } : { backgroundColor: "green" }}

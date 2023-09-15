@@ -17,8 +17,11 @@ body {
   background: rgb(2,0,36);
   background: linear-gradient( #845afc ,  #3f2b79);
   background-repeat: no-repeat;
-  height:100vh;
-  overflow: hidden;
+  min-height:100vh;
+  /* overflow: scroll; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 code {

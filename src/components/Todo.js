@@ -3,7 +3,7 @@ import React from 'react'
 const Todo = (props) => {
 
   return (
-    <div className='flex justify-between items-center my-4 w-full bg-[#865bfb] py-3 px-4 rounded-md text-white'>
+    <div className='flex justify-between items-center my-4 w-full  bg-[#865bfb] py-3 px-4 rounded-md text-white'>
       <div style={{ textDecoration: props.todo.complete ? "line-through" : '' }} onClick={props.toggleComplete}>{props.todo.text}</div>
       <div className='flex gap-2'>
         <button

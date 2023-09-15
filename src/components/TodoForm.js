@@ -22,10 +22,10 @@ const TodoForm = (props) => {
   }
 
   return (
-    <div className='bg-[#1b1a3f]'>
+    <div className='bg-[#1b1a3f] '>
       <form onSubmit={handelSubmit} className='flex flex-col pt-12  text-white w-full'>
-        <h1 className='text-4xl font-extrabold text-white'>Get Things Done!</h1>
-        <div className='flex justify-between items-center my-8 w-full  border rounded-sm'>
+        <h1 className='md:text-4xl text-xl text-center font-extrabold text-white '>Get Things Done!</h1>
+        <div className='flex justify-between flex-col md:flex-row items-center my-8 w-full  border rounded-sm'>
           <input className='p-2 bg-[#1b1a3f] w-auto outline-none '
             type="text"
             onChange={handelChange}
