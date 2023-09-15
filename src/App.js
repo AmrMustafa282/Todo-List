@@ -96,7 +96,7 @@ function App() {
 
 
   return (
-    <div className="container mx-auto flex flex-col rounded-sm justify-start  items-center md:my-40 my-12  pt-10 md:px-12 pb-32 w-fit  bg-[#1b1a3f]  ">
+    <div className="container mx-auto flex flex-col rounded-sm justify-start  items-center md:my-40 my-12 px-4 pt-10 md:px-12 pb-32 w-fit  bg-[#1b1a3f]  ">
       <TodoForm onSubmit={addTodo} />
       {edit &&
 
